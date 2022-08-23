@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 python_file/bbd_log.py $1 $2
+python3 Program_File/bbd_log.py $1 $2
