@@ -17,7 +17,7 @@ class DF_pds():
     def __init__(self, args):
         self.args = args
         self.UP_dic = {}
-        with open(os.path.dirname(os.getcwd()) + '/' + args.file, "r") as log_txt:
+        with open(os.getcwd() + '/' + args.file, "r") as log_txt:
             self.log_lines = log_txt.readlines()
         for line in self.log_lines:
             if ('[info]' in line): print(line, end='') 
@@ -182,12 +182,11 @@ class Menu():
             
 def main(args):
     try:
-        foldor = str(os.path.dirname(os.getcwd())) + '/' + str(args.foldor)
-        # print(foldor)
-        createDirectory(os.path.dirname(os.getcwd()) + '/' + args.file)
+        foldor = str(os.getcwd()) + '/' + str(args.foldor)
+        createDirectory(foldor)
     
         Disp = Disp_tool()
-        Disp.File_open_disp(os.path.dirname(os.getcwd()) + '/' + args.file)
+        Disp.File_open_disp(os.getcwd() + '/' + args.file)
         
         DF = DF_pds(args)
         DF.Get_UP_info()
