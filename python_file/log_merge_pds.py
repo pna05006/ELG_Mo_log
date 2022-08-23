@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
-from pathlib import Path
+import pathlib
+import os, sys
 
 class DF_pds():   
     def __init__(self, folder):
-        self.folder = folder
-        self.file_list = Path(folder).glob("*LGE*.log") #log file list
+        self.folder = pathlib.Path(os.getcwd()) / folder
+        print(self.folder)
+        self.file_list = self.folder.glob("*LGE*.log") #log file list
         self.label_Set = [["file_name"],
                           ["Proxy", "Adm State", "Op. State", "ENodeBFunction", "EUtranCellFDD", "FDD"], 
                           ["Proxy", "Adm State", "Op. State", "Equipment", "FRU", "FDD"],

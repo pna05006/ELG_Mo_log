@@ -7,7 +7,7 @@ import sys, os
 def main(args):
     try:
         print("데이터 추출 중...")
-        DF = DF_pds(str(os.path.dirname(os.getcwd())) + '/' + str(args.folder))
+        DF = DF_pds(args.folder)
         print("데이터 추출 완료!")
         buf_table = []
 
@@ -25,7 +25,7 @@ def main(args):
             total_df = pd.concat([total_df, df])
         print("데이터 매칭 완료!")
 
-        DF.Save_by_sheet(total_df, str(os.path.dirname(os.getcwd())) + '/' + str(args.save_file_name))
+        DF.Save_by_sheet(total_df, str(os.getcwd()) + '/' + str(args.save_file_name))
         print("데이타 저장 완료!")
         print("프로그램을 종료합니다.")
         sys.exit()
@@ -34,7 +34,6 @@ def main(args):
         print("프로그램을 종료합니다.")
         sys.exit()
     
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("folder", help="분석하려는 로그 폴더")

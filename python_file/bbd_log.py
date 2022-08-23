@@ -199,10 +199,10 @@ def main(args):
             if mode == 'exit': break
             M.state = 1 if mode == '0' else 2 if mode in list(DF.UP_dic.keys()) else 3
             M.M_state(DF, mode, foldor)
+
     except KeyboardInterrupt:
         print("프로그램을 종료합니다.")
         sys.exit()
-    
         
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
