@@ -21,12 +21,12 @@ else
 fi
 
 echo "[Install python3 and module]"
-sudo apt-get install Python3 python3-pip
+sudo apt-get install python3 python3-pip
 echo ""
 echo "Installed pip3 version"
 pip3 --version
 echo ""
-pip3 install pandas numpy pathlib tqdm argparse
+pip3 install pandas numpy pathlib tqdm argparse openpyxl
 echo "[Python and module installation complete!]"
 
 # sh -c "echo \"alias Mo_log='cd ${DirPath:0:(-13)} && ./Mo_Log.sh'\" >> ~/.bashrc"
