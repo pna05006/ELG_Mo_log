@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "====== Welcome to MO_Log ====="
+echo "====== Welcome to Mo_Log ====="
 
 DirPath=$(dirname $0)
 Dirlist=$(ls -d $DirPath/*/*ex.sh)
