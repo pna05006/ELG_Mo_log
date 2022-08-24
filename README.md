@@ -6,7 +6,7 @@
 1) Clone this repository to your Ubunto
 2) 'ELG_Mo_log/Installation/python_install_setting.sh' file Permission setting 
 ```bash
-chmod +x python_install_setting.sh
+chmod +x ELG_Mo_log/Installation/python_install_setting.sh
 ```
 
 ### Set-up
@@ -14,6 +14,11 @@ chmod +x python_install_setting.sh
 ```bash
 cd ELG_Mo_log/Installation/
 ./python_install_setting.sh
+```
+if you don't want apt update & upgrade, run under code
+```
+cd ELG_Mo_log/Installation/
+./python_install_setting.sh -u
 ```
 
 ### log파일 넣기
