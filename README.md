@@ -7,7 +7,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 2. 파워쉘에서 아래 코드 입력으로 wsl로 ubuntu 설치(wsl2를 사용하고 싶으면 첫 줄 생략)
 ```
 wsl --set-default-version 1
-wsl --install -d Ubuntu-18.04
+wsl --install -d Ubuntu-20.04
 ```
 3. 설치가 완료되면 셀이 열림. 
 
