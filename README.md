@@ -42,6 +42,8 @@ cd ELG_Mo_log/Installation/
 2) UPDLPDCP코드 기반 필터링 모드의 경우 log파일을 /ELG_Mo_log폴더에 그대로 넣는다.
 3) Cell&FRU 매칭 모드의 경우, /ELG_Mo_log 폴더 안에 하위 폴더를 하나 만들고 그 안에 로그파일들을 넣는다.
 
+참고) 윈도우 탐색기에서 \\wsl$ 경로를 입력하면 wsl 디렉토리에 쉽게 접근 가능하다
+
 ### RUN
 반드시 /ELG_Mo_log폴더 안으로 이동 후 Mo_Log.sh을 실행한다.
 ```bash
