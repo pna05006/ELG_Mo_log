@@ -31,7 +31,10 @@ chmod +x ELG_Mo_log/Installation/python_install_setting.sh
 cd ELG_Mo_log/Installation/
 ./python_install_setting.sh
 ```
+apt update & upgrade를 처음 실행하는거라 시간이 좀 걸린다. 그러다보니 apt upgrade 과정에서 가끔 중간에 멈춰보일때가 있는데 enter누르면 제대로 진행되는 것 같다.
+
 if you don't want apt update & upgrade, run under code
+but 처음 설치하자마자 이걸로 실행하면 설치 오류
 ```
 cd ELG_Mo_log/Installation/
 ./python_install_setting.sh -u
