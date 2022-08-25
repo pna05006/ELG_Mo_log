@@ -1,4 +1,18 @@
 # ELG_Mo_log
+## WSL로 Ubuntu 설치
+1. 파워쉘에서 아래 코드 실행 후 재부팅
+```
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+2. 파워쉘에서 아래 코드 입력으로 wsl로 ubuntu 설치
+```
+wsl --install -d Ubuntu
+```
+3. 설치가 완료되면 셀이 열림. 
+
+Username과 password입력
+
+설치완료
 
 ## How to use this package
 
